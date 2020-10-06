@@ -1,6 +1,15 @@
+import math
+
 def check_armstrong(number):
   """Return True if a number is Armstrong otherwise Return False"""
-  pass
+  res_sum,k = 0,number
+  while(k):
+    res_sum += math.factorial(k%10)
+    k //= 10
+  if res_sum == number:
+    return True
+  return False
+  
   
   
 if __name__ == "__main__":
