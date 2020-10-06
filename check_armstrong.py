@@ -4,7 +4,7 @@ def check_armstrong(number):
   """Return True if a number is Armstrong otherwise Return False"""
   res_sum,k = 0,0
   while(number):
-    res_sum += math.fact(k%10)
+    res_sum += math.factorial(k%10)
     k //= 10
   if res_sum == number:
     return True
